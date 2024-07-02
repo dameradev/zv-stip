@@ -1,0 +1,49 @@
+{
+  "name": "pinegrow",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm-run-all --parallel eleventy browsersync watch:css",
+    "eleventy": "npx eleventy --watch",
+    "debug": "set DEBUG=* & eleventy",
+    "build:css": "postcss ./src/styles.css -o tailwind_theme/tailwind.css && postcss ./src/styles.css -o tailwind_theme/tailwind.css",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch:css": "nodemon -e css -x 'npm run build:css'",
+    "browsersync": "browser-sync start --server _site --files _site --port 8080 --no-notify --no-open",
+    "build": "npm run build:css && npx @11ty/eleventy"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^3.1.3",
+    "@tailwindcss/typography": "^0.5.0",
+    "alpinejs": "^3.7.1",
+    "autoprefixer": "^10.4.18",
+    "browser-sync": "^2.27.7",
+    "cross-env": "^7.0.3",
+    "cssnano": "^5.0.15",
+    "esm-import-transformer": "^1.0.1",
+    "htm": "^3.1.1",
+    "html-minifier": "^4.0.0",
+    "js-yaml": "^4.1.0",
+    "luxon": "^2.3.0",
+    "nodemon": "^3.1.0",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^11.0.0",
+    "preact": "^10.11.3",
+    "preact-render-to-string": "^5.2.6",
+    "prismjs": "^1.26.0",
+    "svelte": "^3.55.1",
+    "tailwindcss": "^3.4.1",
+    "vue": "^3.2.45"
+
+  },
+  "dependencies": {
+    "@11ty/eleventy-img": "^4.0.2",
+    "@11ty/is-land": "^4.0.0",
+    "flowbite": "^2.3.0"
+  }
+}

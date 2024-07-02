@@ -1,0 +1,18 @@
+{
+  "primaryNavigation": [
+    {
+      "route": "/",
+      "text": "Home"
+    },
+    {
+      "route": "/services",
+      "text": "Services"
+    },
+  
+    {
+      "route": "/blog",
+      "text": "Blog"
+    }
+
+  ]
+}
