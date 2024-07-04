@@ -1,11 +1,11 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" class="dark min-h-[10vh]" data-pgc-master="master.html">
     <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
         <title data-pgc-field="title">{{meta.siteName}}</title>
-        <meta property="og:description" content="Custom coded websites with great peformance and high ranking SEO, serving small businesses in Austria" data-pgc-field="description" />
-        <link href="../../tailwind_theme/tailwind.css" rel="stylesheet" type="text/css" data-pgc-field="style-link" />
+        <meta property="og:description" content="Custom coded websites with great peformance and high ranking SEO, serving small businesses in Austria" data-pgc-field="description"/>
+        <link href="../../tailwind_theme/tailwind.css" rel="stylesheet" type="text/css" data-pgc-field="style-link"/>
         <script>
       // On page load or when changing themes, best to add inline in `head` to avoid FOUC
       if (
@@ -25,7 +25,7 @@
     </script>
     </head>
     <body class="dark:text-accent-50 text-accent-900">
-        <header class="bg-primary-50 dark:bg-primary-800 fixed flex h-40 items-center justify-center py-10 shadow shadow-lg w-full z-[100]" data-pgc="wa.Header">
+        <header class="bg-white fixed flex h-40 items-center justify-center py-10 shadow shadow-lg text-black w-full z-[200]" data-pgc="wa.Header">
             <nav class="px-10 container grid grid-cols-2 h-fit items-center justify-center mx-auto w-full md:grid-cols-3"><a href="/" class="font-bold mt-4 text-2xl">SpeedStack</a>
                 <ul class="flex hidden items-center justify-around min-w-[50%] text-xl md:flex" id="navbar-dropdown">
                     <li><a href="/">Home</a>
@@ -37,11 +37,11 @@
                 </ul>
                 <div class="flex gap-12 justify-end">
                     <button id="theme-toggle" type="button" class="dark:focus:ring-gray-700 dark:hover:bg-gray-700 dark:text-gray-400 focus:outline-none focus:ring-4 focus:ring-gray-200 hidden hover:bg-gray-100 p-2.5 rounded-lg text-gray-500 text-sm">
-                        <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
+                        <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
                         </svg>                         
-                        <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd" />
+                        <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path>
                         </svg>
                     </button>
                     <is-land on:visible>
@@ -63,23 +63,13 @@
             </nav>
         </header>
         <main class="pt-40" data-pgc-field="mainContent">
-            <section class="bg-gray-100">
-                <div class="flex items-center justify-center relative z-[100]">
-                    <div class="px-6 mx-auto sm:px-8 lg:px-12">
-                        <div class="w-full lg:w-2/3 xl:w-1/2">
-                            <h1 class="font-normal font-sans text-6xl text-base text-opacity-70 text-white tracking-tight">Технички исправно возило - безбеден сообраќај</h1>
-                            <p class="mt-6 tracking-tighter text-white"> <span class="editable font-normal font-sans text-7xl">The road to the</span><br /> <span class="editable font-normal font-serif italic text-8xl">perfect loaf</span> </p>
-                            <p class="mt-12 font-sans text-base font-normal leading-7 text-white text-opacity-70">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu
-                penatibus pellentesque dolor consequat ligula egestas massa
-                gravida. Porttitor venenatis enim praesent. </p>
-                            <p class="mt-8 font-sans text-xl font-normal text-white">
-                Starting at $9.99/month </p>
-                            <div class="flex items-center mt-5 space-x-3 sm:space-x-4"><a href="#" title="" class="inline-flex items-center justify-center px-5 py-2 font-sans text-base font-semibold transition-all duration-200 border-2 border-transparent rounded-full sm:leading-8 bg-white sm:text-lg text-black hover:bg-opacity-90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary focus:ring-offset-secondary" role="button">
-                  Get started </a><a href="#" title="" class="inline-flex items-center justify-center px-5 py-2 font-sans text-base font-semibold transition-all duration-200 bg-transparent border-2 rounded-full sm:leading-8 text-white border-primary hover:bg-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary hover:text-black sm:text-lg focus:ring-offset-secondary" role="button"> <svg class="w-6 h-6 mr-2" viewbox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.0416 4.9192C7.37507 4.51928 6.5271 4.99939 6.5271 5.77669L6.5271 18.2232C6.5271 19.0005 7.37507 19.4806 8.0416 19.0807L18.4137 12.8574C19.061 12.469 19.061 11.5308 18.4137 11.1424L8.0416 4.9192Z" />
-                                    </svg>
-                  Watch trailer </a>
+            <section class="bg-hero-image bg-no-repeat flex min-h-[70rem] min-w-[100vw]">
+                <div class="bg-cover container flex items-center justify-start mx-auto z-[100]">
+                    <div class="px-6 sm:px-8 lg:px-12">
+                        <div class="w-full">
+                            <h1 class="font-bold font-sans leading-tight max-w-[100rem] text-7xl text-white tracking-tight">Технички исправно возило - безбеден сообраќај</h1>
+                            <p class="font-normal font-sans leading-7 leading-normal max-w-7xl mt-12 text-white text-xl">Нашите услуги се дизајнирани да ги задоволат сите ваши потреби за регистрирање, осигурување и проверка на техничката исправност на вашето возило.</p>
+                            <div class="flex items-center mt-5 space-x-3 sm:space-x-4"><a href="#" title="" class="bg-blue-400 border-2 border-transparent duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-secondary focus:ring-primary font-sans font-semibold hover:bg-opacity-90 inline-flex items-center justify-center mt-10 px-16 py-6 rounded-md transition-all sm:leading-8 sm:text-lg" role="button">Дознајте повеќе</a>
                             </div>
                         </div>
                     </div>
@@ -88,16 +78,16 @@
             <section class="bg-gray-50 py-12 sm:py-16 lg:py-20">
                 <div class="px-4 mx-auto sm:px-6 lg:px-8">
                     <div class="mx-auto text-center">
-                        <h2 class="text-3xl font-bold leading-tight text-gray-900 sm:text-4xl xl:text-5xl font-pj">
+                        <h2 class="editable font-bold font-pj leading-tight max-w-5xl mx-auto text-3xl text-gray-900 sm:text-4xl xl:text-5xl">
               Take the next step without any hassle & get results fast </h2>
                     </div>
                     <div class="gap-10 gap-y-4 grid grid-cols-1 max-w-4xl mt-8 mx-auto text-center sm:gap-x-8 sm:grid-cols-2 sm:mt-12 sm:text-left lg:mt-20">
                         <div class="space-y-4 sm:space-y-8">
                             <div class="overflow-hidden bg-white shadow-md rounded-xl">
                                 <div class="p-9">
-                                    <h3 class="mt-8 text-2xl font-bold text-gray-900 sm:mt-20 font-pj">
+                                    <h3 class="editable font-bold font-pj mt-8 text-2xl text-gray-900 sm:mt-20">
                     Predictive Insights </h3>
-                                    <p class="mt-6 text-base text-gray-600 font-pj">
+                                    <p class="editable font-pj mt-6 text-base text-gray-600">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Eleifend nullam consectetur placerat pellentesque ut massa
                     volutpat at. Diam pretium orci dui sagittis. </p>
@@ -105,9 +95,9 @@
                             </div>
                             <div class="overflow-hidden bg-white shadow-md rounded-xl">
                                 <div class="p-9">
-                                    <h3 class="mt-8 text-2xl font-bold text-gray-900 sm:mt-20 font-pj">
+                                    <h3 class="editable font-bold font-pj mt-8 text-2xl text-gray-900 sm:mt-20">
                     Filtered Data </h3>
-                                    <p class="mt-6 text-base text-gray-600 font-pj">
+                                    <p class="editable font-pj mt-6 text-base text-gray-600">
                     Eleifend nullam consectetur placerat pellentesque ut massa
                     volutpat at. Diam pretium orci dui sagittis. Norem ipsum
                     dolor sit amet, consectetur adipiscing elit. </p>
@@ -117,36 +107,24 @@
                         <div class="space-y-4 sm:space-y-8">
                             <div class="relative">
                                 <div class="absolute -inset-1">
-                                    <div class="w-full h-full rotate-180 opacity-30 blur-lg filter" style="
-                      background: linear-gradient(
-                        90deg,
-                        #44ff9a -0.55%,
-                        #44b0ff 22.86%,
-                        #8b44ff 48.36%,
-                        #ff6644 73.33%,
-                        #ebff70 99.34%
-                      );
-                    "></div>
+                                    <div class="w-full h-full rotate-180 opacity-30 blur-lg filter"></div>
                                 </div>
                                 <div class="relative overflow-hidden bg-white shadow-md rounded-xl">
                                     <div class="p-9">
-                                        <h3 class="mt-8 text-2xl font-bold text-gray-900 sm:mt-20 font-pj">
+                                        <h3 class="editable font-bold font-pj mt-8 text-2xl text-gray-900 sm:mt-20">
                       Fastest Speed </h3>
                                         <p class="editable font-pj mt-6 text-base text-gray-600">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                       Eleifend nullam consectetur placerat pellentesque ut massa
                       volutpat at. Diam pretium orci dui sagittis. </p>
-                                        <p class="mt-6 text-base text-gray-600 font-pj">
-                      Eleifend nullam consectetur placerat pelle tesque ut massa
-                      volutpat bonur los. </p>
                                     </div>
                                 </div>
                             </div>
                             <div class="overflow-hidden bg-white shadow-md rounded-xl">
                                 <div class="p-9">
-                                    <h3 class="mt-8 text-2xl font-bold text-gray-900 sm:mt-20 font-pj">
+                                    <h3 class="editable font-bold font-pj mt-8 text-2xl text-gray-900 sm:mt-20">
                     Everything in Cloud </h3>
-                                    <p class="mt-6 text-base text-gray-600 font-pj">
+                                    <p class="editable font-pj mt-6 text-base text-gray-600">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Eleifend nullam consectetur placerat pellentesque ut massa
                     volutpat at. Diam pretium orci dui sagittis. </p>
@@ -160,58 +138,51 @@
                 <div class="container mx-auto px-4 sm:px-6 lg:px-8">
                     <div class="grid grid-cols-1 md:items-center gap-y-8 md:grid-cols-2 md:gap-x-16">
                         <div>
-                            <img class="editable max-w-sm mx-auto w-full" src="https://cdn.rareblocks.xyz/collection/clarity/images/features-v2/5/illustration.png" alt="" />
+                            <img class="editable mx-auto w-full" src="https://cdn.rareblocks.xyz/collection/clarity/images/features-v2/5/illustration.png" alt=""/>
                         </div>
                         <div>
-                            <h2 class="editable font-bold font-pj text-3xl text-gray-900 sm:text-4xl xl:text-5xl">
-      Вашиот Партнер за Сигурно и Безбедно Возење
-</h2>
+                            <h2 class="editable font-bold font-pj text-3xl text-gray-900 sm:text-4xl xl:text-5xl"> <span class="text-blue-400">Вашиот Партнер</span> за Сигурно и Безбедно Возење</h2>
                             <p class="editable font-pj leading-7 mt-4 text-base text-gray-900 sm:mt-8">
-      Нашата стручност, одличниот квалитет кој го постигнуваме со големиот професионализам и секако љубезноста на нашите вработени, секојдневно ја потврдуваат <strong>НАШИТЕ ЗАДОВОЛНИ КЛИЕНТИ.</strong> <br /><br />Нашите тимови се составени од млади и енергични експерти кои со посветеноста кон работата секојдневно се стремат кон совршенство. <strong>НИЕ НЕ ИМПРОВИЗИРАМЕ!</strong>
-</p>
+      Нашата стручност, одличниот квалитет кој го постигнуваме со големиот професионализам и секако љубезноста на нашите вработени, секојдневно ја потврдуваат <strong>НАШИТЕ ЗАДОВОЛНИ КЛИЕНТИ.</strong> <br/><br/>Нашите тимови се составени од млади и енергични експерти кои со посветеноста кон работата секојдневно се стремат кон совршенство. <strong>НИЕ НЕ ИМПРОВИЗИРАМЕ!</strong></p>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="py-12 bg-white sm:py-16 lg:py-20">
+            <section class="bg-blue-400 py-12 text-white sm:py-16 lg:py-20">
                 <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-                    <div class="md:flex md:items-center md:justify-between md:space-x-16">
+                    <div class="2 gap-20 grid grid-cols-2">
                         <div>
-                            <h2 class="editable font-bold font-pj text-3xl text-gray-900 sm:text-4xl xl:text-5xl">
-      Со Нас Соработката е <br />ДОЛГОТРАЈНА!
-</h2>
+                            <h2 class="editable font-bold font-pj text-3xl sm:text-4xl xl:text-5xl">
+      Со Нас Соработката е <br/>ДОЛГОТРАЈНА!</h2>
+                            <p class="mt-8">Ние сме доверлива и докажана компанија, а како потврда за тоа е се поголемиот број на наши клинети, и тој број секојдневно се зголемува.</p>
                         </div>
                         <div class="flex items-center flex-grow mt-12 space-x-4 sm:space-x-8 lg:space-x-16 md:mt-0">
                             <div>
-                                <p class="editable font-bold font-pj text-4xl text-gray-900 xl:text-6xl">
-      50.000
-</p>
-                                <p class="editable font-normal font-pj mt-2 text-base text-gray-600 lg:text-xl">
-      Направени Регистрации
-</p>
+                                <p class="editable font-bold font-pj text-4xl text-center xl:text-6xl">
+      50.000</p>
+                                <p class="editable font-normal font-pj mt-2 mt-4 text-center lg:text-xl">
+      Направени Регистрации</p>
                             </div>
                             <div>
                                 <svg class="w-4 h-auto text-gray-300" viewbox="0 0 16 81" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                    <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(0.83205 0.5547 0.5547 -0.83205 1 56)" />
-                                    <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(0.83205 0.5547 0.5547 -0.83205 1 21)" />
-                                    <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(0.83205 0.5547 0.5547 -0.83205 1 49)" />
-                                    <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(0.83205 0.5547 0.5547 -0.83205 1 14)" />
-                                    <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(0.83205 0.5547 0.5547 -0.83205 1 42)" />
-                                    <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(0.83205 0.5547 0.5547 -0.83205 1 7)" />
-                                    <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(0.83205 0.5547 0.5547 -0.83205 1 70)" />
-                                    <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(0.83205 0.5547 0.5547 -0.83205 1 35)" />
-                                    <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(0.83205 0.5547 0.5547 -0.83205 1 0)" />
-                                    <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(0.83205 0.5547 0.5547 -0.83205 1 63)" />
-                                    <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(0.83205 0.5547 0.5547 -0.83205 1 28)" />
+                                    <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(0.83205 0.5547 0.5547 -0.83205 1 56)"/>
+                                    <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(0.83205 0.5547 0.5547 -0.83205 1 21)"/>
+                                    <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(0.83205 0.5547 0.5547 -0.83205 1 49)"/>
+                                    <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(0.83205 0.5547 0.5547 -0.83205 1 14)"/>
+                                    <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(0.83205 0.5547 0.5547 -0.83205 1 42)"/>
+                                    <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(0.83205 0.5547 0.5547 -0.83205 1 7)"/>
+                                    <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(0.83205 0.5547 0.5547 -0.83205 1 70)"/>
+                                    <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(0.83205 0.5547 0.5547 -0.83205 1 35)"/>
+                                    <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(0.83205 0.5547 0.5547 -0.83205 1 0)"/>
+                                    <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(0.83205 0.5547 0.5547 -0.83205 1 63)"/>
+                                    <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(0.83205 0.5547 0.5547 -0.83205 1 28)"/>
                                 </svg>
                             </div>
                             <div>
-                                <p class="editable font-bold font-pj text-4xl text-gray-900 xl:text-6xl">
-      4.8/5
-</p>
-                                <p class="editable font-normal font-pj mt-2 text-base text-gray-600 lg:text-xl">
-      Рецензии на Google
-</p>
+                                <p class="editable font-bold font-pj text-4xl text-center xl:text-6xl">
+      4.8/5</p>
+                                <p class="editable font-normal font-pj mt-2 mt-4 text-center lg:text-xl">
+      Рецензии на Google</p>
                             </div>
                         </div>
                     </div>
@@ -222,15 +193,38 @@
                     <div class="grid grid-cols-1 md:items-center gap-y-8 md:grid-cols-2 md:gap-x-16">
                         <div>
                             <h2 class="editable font-bold font-pj text-3xl text-gray-900 sm:text-4xl xl:text-5xl">
-      Автошкола Полигон – Вашиот Прв Чекор до Успешно Полагање
-</h2>
+      Автошкола Полигон – Вашиот Прв Чекор до <span class="text-blue-400">Успешно</span> Полагање</h2>
                             <p class="editable font-pj leading-7 mt-4 text-base text-gray-900 sm:mt-8">
-      Имаме специјално дизајниран полигон каде кандидатите за возачка дозвола ги изведуваат маневрите за паркирање. Нашиот полигон нуди реалистични услови за безбедно учење.<br /><br />Со редовни вежби и симулации, ќе бидете целосно подготвени за испитот. Ние ви помагаме да го положите испитот од прв пат.
-</p>
+      Имаме специјално дизајниран полигон каде кандидатите за возачка дозвола ги изведуваат маневрите за паркирање. Нашиот полигон нуди реалистични услови за безбедно учење.<br/><br/>Со редовни вежби и симулации, ќе бидете целосно подготвени за испитот. Ние ви помагаме да го положите испитот од прв пат.</p>
                         </div>
                         <div>
-                            <img class="editable max-w-sm mx-auto w-full" src="/uploads/image-5.png" srcset="/uploads/image-5.png 1x, /uploads/image-5-2x.png 2x" />
+                            <img class="editable mx-auto w-full" src="../uploads/image-5-2x.png" srcset="/uploads/image-5.png 1x, /uploads/image-5-2x.png 2x"/>
                         </div>
+                    </div>
+                </div>
+            </section>
+            <section class="text-gray-600 body-font relative">
+                <div class="container flex gap-16 mx-auto pb-64 pt-32 px-5 sm:flex-nowrap">
+                    <div class="bg-gray-300 flex h-[50rem] items-end justify-start overflow-hidden p-10 relative rounded-lg sm:mr-10 md:w-1/2 lg:w-2/3">
+                        <iframe width="100%" height="100%" class="absolute h-[50rem] inset-0" frameborder="0" title="map" marginheight="0" marginwidth="0" scrolling="no" src="https://maps.google.com/maps?width=100%&height=600&hl=en&q=41.752960,22.172020&ie=UTF8&t=&z=14&iwloc=B&output=embed"></iframe>
+                        <div class="bg-white relative flex flex-wrap py-6 rounded shadow-md">
+                            <div class="px-6">
+                                <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs">Погледни на Google - Здрузение На Возачи</h2>
+                                <p class="mt-1">4,5</p>
+                                <p class="mt-1"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:w-1/3 md:w-1/2 bg-white flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
+                        <form>
+                            <svg width="76" height="2" viewbox="0 0 76 2" fill="none" xmlns="http://www.w3.org/2000/svg" class="mb-32">
+                                <path d="M0 1H76" stroke="black" stroke-width="2"/>
+                            </svg>
+                            <p>ул. Железничка бр. 12а, 2000, Македонија</p>
+                            <p>zvstip@zvstip.com.mk</p>
+                            <p>+38932392387</p>
+                            <button class="bg-secondary-400 border-0 focus:outline-none px-6 py-4 rounded rounded-full text-lg text-white uppercase w-full">Subscribe</button>
+                        </form>
                     </div>
                 </div>
             </section>
@@ -319,7 +313,7 @@
                 </div>
                 <div class="border-accent-950 border-t-2 col-span-2 dark:border-accent-100 mt-20">
                     <ul class="flex justify-between py-8">
-                        <li><a class="pr-10 border-r-[1px]">Privacy Policy</a> <a class="pl-10">Terms &amp; Conditions</a> <a class="pl-10"></a>
+                        <li><a class="pr-10 border-r-[1px]">Privacy Policy</a><a class="pl-10">Terms &amp; Conditions</a><a class="pl-10"></a>
                         </li>
                         <li class="justify-self-end self-end">© Copyright SpeedStack 2024</li>
                     </ul>

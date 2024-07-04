@@ -48,7 +48,7 @@ blue: {'50': '#eff6ff',
 '100': '#dbeafe',
 '200': '#bfdbfe',
 '300': '#93c5fd',
-'400': '#60a5fa',
+'400': '#0039a6',
 '500': '#3b82f6',
 '600': '#2563eb',
 '700': '#1d4ed8',
@@ -152,6 +152,9 @@ module.exports = {
       placeholderColor: pg_colors,
       gradientColorStops: pg_colors,
       fontFamily: pg_fonts,
+      backgroundImage: {
+        "hero-image": "url('/src/uploads/hero.png')",
+      },
     },
 
     fontSize: {

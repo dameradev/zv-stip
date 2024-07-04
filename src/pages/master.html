@@ -25,11 +25,13 @@
     </script>
     </head>
     <body data-pgc-section="body" class="dark:text-accent-50 text-accent-900">
-        <header class="bg-primary-50 dark:bg-primary-800 fixed flex h-40 items-center justify-center py-10 shadow shadow-lg w-full z-[100]" data-pgc-define="wa.Header" data-pgc-define-name="Header" data-pgc-section="Headers And Footers">
-            <nav class="px-10 container grid grid-cols-2 h-fit items-center justify-center mx-auto w-full md:grid-cols-3"><a href="/" class="font-bold mt-4 text-2xl">{{meta.siteName}}</a>
+        <header class="bg-white fixed flex h-40 items-center justify-center py-10 shadow shadow-lg text-black w-full z-[200]" data-pgc-define="wa.Header" data-pgc-define-name="Header" data-pgc-section="Headers And Footers">
+            <nav class="px-10 container grid grid-cols-2 h-fit items-center justify-center mx-auto w-full md:grid-cols-3">
+                <a href="/" class="font-bold mt-4 text-2xl">{{meta.siteName}}</a>
                 <ul class="flex hidden items-center justify-around min-w-[50%] text-xl md:flex" id="navbar-dropdown">
                     {% for item in navigation.primaryNavigation %}
-                    <li><a href="{{item.route}}">{{item.text}}</a>
+                    <li>
+                        <a href="{{item.route}}">{{item.text}}</a>
                     </li>
                     {% endfor %}
                 </ul>
@@ -60,8 +62,7 @@
                               );
                             </script>
                         </template>
-                    </is-land>
-                    <a href="/contact" class="border-[1px] border-accent-700 hidden justify-self-end px-14 py-5 rounded-full self-center text-accent-50 md:block"><button class="rounded-full text-accent-50 uppercase">Start Project</button></a>
+                    </is-land><a href="/contact" class="border-[1px] border-accent-700 hidden justify-self-end px-14 py-5 rounded-full self-center text-accent-50 md:block"><button class="rounded-full text-accent-50 uppercase">Start Project</button></a>
                 </div>
             </nav>
         </header>
@@ -118,47 +119,43 @@
     </script>
         <footer class="bg-primary-50 dark:bg-primary-800 pb-20 pt-32 shadow-xl" data-pgc-define="wa.Footer" data-pgc-define-name="Footer" data-pgc-section="Headers And Footers">
             <div class="container grid grid-cols-1 mx-auto px-10 md:px-0 lg:grid-cols-2">
-                <div class="mx-auto pr-24"><a href="/" class="font-bold mt-4 text-2xl">{{meta.siteName}}</a>
+                <div class="mx-auto pr-24">
+                    <a href="/" class="font-bold mt-4 text-2xl">{{meta.siteName}}</a>
                     <p class="mt-2">Custom coded websites with great peformance and high ranking SEO, serving small businesses,</p>
                     <p class="mt-2">When you&apos;re unsure about the technology stack for your next project, choose the SpeedStack.</p>
                 </div>
                 <div class="flex gap-8 justify-end">
                     <div>
                         <ul class="flex flex-col gap-2">
-                            <li>
-                                <a href="/tiers" class="cursor-pointer underline">Pricing</a>
-                            </li>
-                            <li><a href="/free-consultation" class="cursor-pointer underline">Free consulatation</a>
+                            <li><a href="/tiers" class="cursor-pointer underline">Pricing</a>
                             </li>
                             <li>
-                                <a href="/contact" class="cursor-pointer underline">Contact us</a>
+                                <a href="/free-consultation" class="cursor-pointer underline">Free consulatation</a>
                             </li>
-                            <li>
-                                <a href="https://docs.google.com/forms/d/1dtqeeshhtozp2vVflnWmww7c-LlSKrjvTTCrQVhJx3E/edit" spellcheck="false" data-medium-editor-element="true" role="textbox" aria-multiline="true" data-medium-editor-editor-index="18" medium-editor-index="41d3c34d-7200-fc77-212f-ac204aed5edc" data-placeholder="Type your text" data-medium-focused="true" class="cursor-pointer underline">Questionnaire</a>
+                            <li><a href="/contact" class="cursor-pointer underline">Contact us</a>
+                            </li>
+                            <li><a href="https://docs.google.com/forms/d/1dtqeeshhtozp2vVflnWmww7c-LlSKrjvTTCrQVhJx3E/edit" spellcheck="false" data-medium-editor-element="true" role="textbox" aria-multiline="true" data-medium-editor-editor-index="18" medium-editor-index="41d3c34d-7200-fc77-212f-ac204aed5edc" data-placeholder="Type your text" data-medium-focused="true" class="cursor-pointer underline">Questionnaire</a>
                             </li>
                         </ul>
                     </div>
                     <div>
                         <ul class="flex flex-col gap-2">
-                            <li><a href="/services" class="cursor-pointer underline">Services</a>
-                            </li>
                             <li>
-                                <a href="/jamstack" class="cursor-pointer underline">Jamstack</a>
+                                <a href="/services" class="cursor-pointer underline">Services</a>
                             </li>
-                            <li>
-                                <a href="/blog" class="cursor-pointer underline">Blog</a>
+                            <li><a href="/jamstack" class="cursor-pointer underline">Jamstack</a>
                             </li>
-                            <li>
-                                <a href="/portfolio" class="cursor-pointer underline">Portfolio</a>
+                            <li><a href="/blog" class="cursor-pointer underline">Blog</a>
+                            </li>
+                            <li><a href="/portfolio" class="cursor-pointer underline">Portfolio</a>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div class="border-accent-950 border-t-2 col-span-2 dark:border-accent-100 mt-20">
                     <ul class="flex justify-between py-8">
-                        <li><a class="pr-10 border-r-[1px]">Privacy Policy</a>
-                            <a class="pl-10">Terms &amp; Conditions</a>
-                            <a class="pl-10"></a>
+                        <li>
+                            <a class="pr-10 border-r-[1px]">Privacy Policy</a><a class="pl-10">Terms &amp; Conditions</a><a class="pl-10"></a>
                         </li>
                         <li class="justify-self-end self-end">© Copyright SpeedStack 2024</li>
                     </ul>
