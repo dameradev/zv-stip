@@ -162,7 +162,7 @@ module.exports = {
       gradientColorStops: pg_colors,
       fontFamily: pg_fonts,
       backgroundImage: {
-        "hero-image": "url('/uploads/hero.png')",
+        "hero-image": "url('../uploads/hero.png')",
       },
     },
 
