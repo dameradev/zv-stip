@@ -66,12 +66,10 @@
             <section class="container gap-20 grid grid-cols-1 mt-15 mx-auto px-10 py-32 md:grid-cols-2 lg:grid-cols-3"> {% assign postslist = collections.post %} 
                 {% for post in
                 postslist | reverse %}
-                <div class="bg-gray-800 flex flex-col justify-between min-h-max rounded-lg shadow text-white" data-pgc-define="custom-card-blog" data-pgc-section="Cards">
-                    <a href="{{ post.url | url }}">
+                <div class="bg-gray-800 flex flex-col justify-between min-h-max rounded-lg shadow text-white" data-pgc-define="custom-card-blog" data-pgc-section="Cards"><a href="{{ post.url | url }}">
                       {% if post.data.image %}  <img class="object-cover max-h-[200px] min-w-full rounded-t-lg" src="{{ post.data.image | image }}" alt="">{% endif %} </a>
                     <!-- {{post.data.image}} -->
-                    <div class="flex flex-col  justify-between p-14">
-                        <a href="{{ post.url | url }}"> <h5 class="dark:text-white font-bold mb-4 text-2xl tracking-tight">
+                    <div class="flex flex-col  justify-between p-14"><a href="{{ post.url | url }}"> <h5 class="dark:text-white font-bold mb-4 text-2xl tracking-tight">
                                 {% if post.data.title %} {{ post.data.title }} {% else %} Untitled {% endif %} </h5> </a>
                         {% if post.data.description %}
                         <p class="dark:text-white font-normal mb-3"> {{ post.data.description }} </p>

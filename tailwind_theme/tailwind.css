@@ -1418,10 +1418,6 @@ p {
   height: 50rem;
 }
 
-.h-\[70rem\]{
-  height: 70rem;
-}
-
 .h-\[calc\(100\%-1rem\)\]{
   height: calc(100% - 1rem);
 }
