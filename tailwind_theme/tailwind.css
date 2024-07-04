@@ -1418,6 +1418,10 @@ p {
   height: 50rem;
 }
 
+.h-\[70rem\]{
+  height: 70rem;
+}
+
 .h-\[calc\(100\%-1rem\)\]{
   height: calc(100% - 1rem);
 }
@@ -2092,10 +2096,6 @@ p {
 
 .bg-white\/30{
   background-color: rgb(255 255 255 / 0.3);
-}
-
-.bg-hero-image{
-  background-image: url('/src/uploads/hero.png');
 }
 
 .bg-cover{
