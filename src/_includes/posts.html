@@ -26,13 +26,13 @@
     </head>
     <body class="dark:text-accent-50 text-accent-900">
         <header class="bg-white fixed flex h-40 items-center justify-center py-10 shadow shadow-lg text-black w-full z-[200]" data-pgc="wa.Header">
-            <nav class="px-10 container grid grid-cols-2 h-fit items-center justify-center mx-auto w-full md:grid-cols-3"><a href="/" class="font-bold mt-4 text-2xl">SpeedStack</a>
+            <nav class="px-10 container grid grid-cols-2 h-fit items-center justify-center mx-auto w-full md:grid-cols-3"><a href="/" class="font-bold mt-4 text-2xl"><img height="50" width="50" src="../pages/uploads/logo.png" srcset="../uploads/logo.png 1x" data-pgc-field="logo"></a>
                 <ul class="flex hidden items-center justify-around min-w-[50%] text-xl md:flex" id="navbar-dropdown">
-                    <li><a href="/">Home</a>
+                    <li><a href="/">Услуги</a>
                     </li>
-                    <li><a href="/services">Services</a>
+                    <li><a href="/services">Документи</a>
                     </li>
-                    <li><a href="/blog">Blog</a>
+                    <li><a href="/blog">За Нас</a>
                     </li>
                 </ul>
                 <div class="flex gap-12 justify-end">
@@ -54,11 +54,11 @@
                               import Drawer from "/lib/preact/drawer.client.js";
               
                               render(
-                                html`<${Drawer} items=${JSON.parse('[{"route":"/","text":"Home"},{"route":"/services","text":"Services"},{"route":"/blog","text":"Blog"}]')}  />`,
+                                html`<${Drawer} items=${JSON.parse('[{"route":"/","text":"Услуги"},{"route":"/services","text":"Документи"},{"route":"/blog","text":"За Нас"}]')}  />`,
                                 document.getElementById("drawer-preact")
                               );</script>
                         </template>
-                    </is-land><a href="/contact" class="border-[1px] border-accent-700 hidden justify-self-end px-14 py-5 rounded-full self-center text-accent-50 md:block"><button class="rounded-full text-accent-50 uppercase">Start Project</button></a>
+                    </is-land><a href="/contact" class="border-[1px] border-accent-700 hidden justify-self-end px-14 py-5 rounded-full self-center text-black md:block"><button class="rounded-full text-black uppercase">Контакт</button></a>
                 </div>
             </nav>
         </header>
@@ -123,46 +123,50 @@
         }
       });
     </script>
-        <footer class="bg-primary-50 dark:bg-primary-800 pb-20 pt-32 shadow-xl" data-pgc="wa.Footer">
-            <div class="container grid grid-cols-1 mx-auto px-10 md:px-0 lg:grid-cols-2">
-                <div class="mx-auto pr-24"><a href="/" class="font-bold mt-4 text-2xl">SpeedStack</a>
-                    <p class="mt-2">Custom coded websites with great peformance and high ranking SEO, serving small businesses,</p>
-                    <p class="mt-2">When you&apos;re unsure about the technology stack for your next project, choose the SpeedStack.</p>
-                </div>
-                <div class="flex gap-8 justify-end">
-                    <div>
-                        <ul class="flex flex-col gap-2">
-                            <li><a href="/tiers" class="cursor-pointer underline">Pricing</a>
-                            </li>
-                            <li><a href="/free-consultation" class="cursor-pointer underline">Free consulatation</a>
-                            </li>
-                            <li><a href="/contact" class="cursor-pointer underline">Contact us</a>
-                            </li>
-                            <li><a href="https://docs.google.com/forms/d/1dtqeeshhtozp2vVflnWmww7c-LlSKrjvTTCrQVhJx3E/edit" spellcheck="false" data-medium-editor-element="true" role="textbox" aria-multiline="true" data-medium-editor-editor-index="18" medium-editor-index="41d3c34d-7200-fc77-212f-ac204aed5edc" data-placeholder="Type your text" data-medium-focused="true" class="cursor-pointer underline">Questionnaire</a>
-                            </li>
-                        </ul>
+    </body>
+    <footer class="bg-primary-800 body-font relative text-gray-600">
+        <div class="container flex flex-col-reverse gap-16 mx-auto px-5 py-20 sm:flex-nowrap md:flex-row">
+            <div class="bg-gray-300 flex h-[50rem] items-end justify-start overflow-hidden p-10 relative rounded-lg sm:mr-10 md:w-1/2 lg:w-2/3">
+                <iframe width="100%" height="100%" class="absolute h-[50rem] inset-0" frameborder="0" title="map" marginheight="0" marginwidth="0" scrolling="no" src="https://maps.google.com/maps?width=100%&height=600&hl=en&q=41.752960,22.172020&ie=UTF8&t=&z=14&iwloc=B&output=embed"></iframe>
+                <div class="bg-white relative flex flex-wrap py-6 rounded shadow-md">
+                    <div class="px-6">
+                        <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs">Погледни на Google - Здрузение На Возачи</h2>
+                        <p class="mt-1">4,5</p>
+                        <p class="mt-1"></p>
                     </div>
-                    <div>
-                        <ul class="flex flex-col gap-2">
-                            <li><a href="/services" class="cursor-pointer underline">Services</a>
-                            </li>
-                            <li><a href="/jamstack" class="cursor-pointer underline">Jamstack</a>
-                            </li>
-                            <li><a href="/blog" class="cursor-pointer underline">Blog</a>
-                            </li>
-                            <li><a href="/portfolio" class="cursor-pointer underline">Portfolio</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="border-accent-950 border-t-2 col-span-2 dark:border-accent-100 mt-20">
-                    <ul class="flex justify-between py-8">
-                        <li><a class="pr-10 border-r-[1px]">Privacy Policy</a><a class="pl-10">Terms &amp; Conditions</a><a class="pl-10"></a>
-                        </li>
-                        <li class="justify-self-end self-end">© Copyright SpeedStack 2024</li>
-                    </ul>
                 </div>
             </div>
-        </footer>
-    </body>
+            <div class="flex flex-col items-center justify-center mt-8 text-white w-full md:ml-auto md:mt-0 md:py-8 md:w-1/2 lg:w-1/3">
+                <form>
+                    <ul class="flex flex-col text-xl">
+                        <li class="flex gap-10">
+                            <svg width="25" height="26" viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.6839 17.8711C16.7514 18.8394 14.8072 20.8584 13.4583 22.2592C12.6716 23.0762 11.3655 23.0765 10.5788 22.2595C9.25336 20.8831 7.34681 18.9032 6.35287 17.8711C3.22389 14.6217 3.22389 9.35355 6.35287 6.10423C9.48184 2.85491 14.5549 2.85491 17.6839 6.10423C20.8129 9.35355 20.8129 14.6217 17.6839 17.8711Z" stroke="#B60509" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M15.023 11.9876C15.023 13.7109 13.6778 15.1078 12.0184 15.1078C10.359 15.1078 9.01379 13.7109 9.01379 11.9876C9.01379 10.2644 10.359 8.86749 12.0184 8.86749C13.6778 8.86749 15.023 10.2644 15.023 11.9876Z" stroke="#B60509" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                             <a href="">ул. Железничка бр. 12а, 2000, Македонија</a> 
+                        </li>
+                        <li class="flex gap-10">
+                            <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.99695 8.01859L10.8796 12.8818C11.5507 13.2958 12.425 13.2958 13.0961 12.8818L20.9787 8.01859M4.99492 18.188H18.9807C20.0842 18.188 20.9787 17.3602 20.9787 16.339V7.0941C20.9787 6.07293 20.0842 5.24512 18.9807 5.24512H4.99492C3.89147 5.24512 2.99695 6.07293 2.99695 7.0941V16.339C2.99695 17.3602 3.89147 18.188 4.99492 18.188Z" stroke="#B60509" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                             <a href="mailto:zvstip@zvstip.com.mk">zvstip@zvstip.com.mk</a> 
+                        </li>
+                        <li class="flex gap-10">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.9579 7.39796C5.56298 8.49483 6.26036 9.54754 7.16577 10.5075C8.07412 11.4733 9.20369 12.3523 10.6658 13.1032C10.7743 13.1562 10.8768 13.1562 10.9691 13.1194C11.1083 13.0664 11.2504 12.9501 11.3896 12.8102C11.498 12.7012 11.6328 12.5275 11.7734 12.3376C12.336 11.5941 13.0319 10.6709 14.015 11.1332C14.037 11.1435 14.0531 11.1553 14.0751 11.1641L17.3539 13.059C17.3642 13.0649 17.3759 13.0752 17.3847 13.0811C17.8169 13.38 17.9956 13.8408 18 14.3635C18 14.895 17.8051 15.4927 17.5195 15.9977C17.1415 16.6647 16.5847 17.1064 15.943 17.3979C15.3321 17.6806 14.6523 17.8322 13.9989 17.9294C12.9733 18.0811 12.0122 17.9839 11.0292 17.6806C10.0681 17.3817 9.09967 16.8885 8.04189 16.2318L7.96424 16.1818C7.4793 15.877 6.9548 15.5516 6.44056 15.1674C4.5594 13.7392 2.64162 11.6765 1.39191 9.4062C0.344384 7.50102 -0.226995 5.4442 0.0850661 3.48455C0.257945 2.40976 0.716513 1.43214 1.51644 0.787267C2.21382 0.221899 3.15293 -0.0872873 4.36894 0.0216639C4.50813 0.0319701 4.63266 0.112947 4.69859 0.233677L6.80097 3.80551C7.10863 4.20598 7.14673 4.60351 6.97824 5.00103C6.83906 5.32641 6.55777 5.62676 6.17392 5.9065C6.06111 6.00368 5.92632 6.10232 5.78421 6.20538C5.31392 6.54843 4.77917 6.94449 4.9623 7.40974L4.9579 7.39796Z" fill="#B60509"/>
+                            </svg>                             <a href="tel:+38932392387">+38932392387</a>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+        <div class="border-gray-100 border-t-[1px] container flex flex-col gap-10 items-center justify-between mx-auto py-20 text-white md:flex-row">
+            <ul class="flex flex-col text-center md:flex-row">
+                <li>Услуги</li>
+                <li>Документи</li>
+                <li>Закони</li>
+                <li>Контакт</li>
+            </ul>
+            <p>© Copyright 2021, All Rights Reserved</p>
+        </div>
+    </footer>
 </html>

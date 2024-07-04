@@ -2,16 +2,16 @@
   "primaryNavigation": [
     {
       "route": "/",
-      "text": "Home"
+      "text": "Услуги"
     },
     {
       "route": "/services",
-      "text": "Services"
+      "text": "Документи"
     },
   
     {
       "route": "/blog",
-      "text": "Blog"
+      "text": "За Нас"
     }
 
   ]

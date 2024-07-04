@@ -26,13 +26,13 @@
     </head>
     <body class="dark:text-accent-50 text-accent-900">
         <header class="bg-white fixed flex h-40 items-center justify-center py-10 shadow shadow-lg text-black w-full z-[200]" data-pgc="wa.Header">
-            <nav class="px-10 container grid grid-cols-2 h-fit items-center justify-center mx-auto w-full md:grid-cols-3"><a href="/" class="font-bold mt-4 text-2xl">SpeedStack</a>
+            <nav class="px-10 container grid grid-cols-2 h-fit items-center justify-center mx-auto w-full md:grid-cols-3"><a href="/" class="font-bold mt-4 text-2xl"><img height="50" width="50" src="../uploads/logo.png" srcset="../../uploads/logo.png 1x" data-pgc-field="logo"></a>
                 <ul class="flex hidden items-center justify-around min-w-[50%] text-xl md:flex" id="navbar-dropdown">
-                    <li><a href="/">Home</a>
+                    <li><a href="/">Услуги</a>
                     </li>
-                    <li><a href="/services">Services</a>
+                    <li><a href="/services">Документи</a>
                     </li>
-                    <li><a href="/blog">Blog</a>
+                    <li><a href="/blog">За Нас</a>
                     </li>
                 </ul>
                 <div class="flex gap-12 justify-end">
@@ -54,11 +54,11 @@
                               import Drawer from "/lib/preact/drawer.client.js";
               
                               render(
-                                html`<${Drawer} items=${JSON.parse('[{"route":"/","text":"Home"},{"route":"/services","text":"Services"},{"route":"/blog","text":"Blog"}]')}  />`,
+                                html`<${Drawer} items=${JSON.parse('[{"route":"/","text":"Услуги"},{"route":"/services","text":"Документи"},{"route":"/blog","text":"За Нас"}]')}  />`,
                                 document.getElementById("drawer-preact")
                               );</script>
                         </template>
-                    </is-land><a href="/contact" class="border-[1px] border-accent-700 hidden justify-self-end px-14 py-5 rounded-full self-center text-accent-50 md:block"><button class="rounded-full text-accent-50 uppercase">Start Project</button></a>
+                    </is-land><a href="/contact" class="border-[1px] border-accent-700 hidden justify-self-end px-14 py-5 rounded-full self-center text-black md:block"><button class="rounded-full text-black uppercase">Контакт</button></a>
                 </div>
             </nav>
         </header>
@@ -172,7 +172,8 @@
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                                         </svg>
                                     </button>
-                                    <div x-show="open" @click.away="open = false" class="absolute bg-white left-0 mt-2 origin-top-left px-2 py-2 ring-1 ring-black ring-opacity-5 rounded-md shadow-lg w-56"><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md">Save</a>
+                                    <div x-show="open" @click.away="open = false" class="absolute bg-white left-0 mt-2 origin-top-left px-2 py-2 ring-1 ring-black ring-opacity-5 rounded-md shadow-lg w-56">
+                                        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md">Save</a>
                                         <div x-data="{ subMenuOpen: false }" class="relative">
                                             <button @click="subMenuOpen = !subMenuOpen" class="flex justify-between items-center w-full px-4 py-2 text-gray-700 hover:bg-gray-100 relative rounded-md">
                                                 Share to
@@ -191,15 +192,11 @@
                                                     </g>
                                                 </svg>
                                             </button>
-                                            <div x-show="subMenuOpen" @click.away="subMenuOpen = false" class="absolute top-0 left-full ml-4 w-full rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 px-2 py-2">
-                                                <a target="_blank" rel="noopener" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Ftailwindcomponents.com%2Fu%2Fdhaifullah&amp;text=" class="flex px-4 py-2 text-gray-700 hover:bg-gray-100">Twitter</a>
-                                                <a target="_blank" rel="noopener" href="https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Ftailwindcomponents.com%2Fu%2Fdhaifullah" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Facebook</a>
-                                                <a target="_blank" rel="noopener" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Ftailwindcomponents.com%2Fu%2Fdhaifullah&amp;title=&amp;summary=&amp;source=https%3A%2F%2Ftailwindcomponents.com%2Fu%2Fdhaifullah" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">LinkedIn</a>
-                                                <a target="_blank" rel="noopener" href="https://www.tumblr.com/widgets/share/tool?posttype=link&amp;title=&amp;caption=&amp;content=https%3A%2F%2Ftailwindcomponents.com%2Fu%2Fdhaifullah&amp;canonicalUrl=https%3A%2F%2Ftailwindcomponents.com%2Fu%2Fdhaifullah&amp;shareSource=tumblr_share_button" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Tumblr</a>
-                                                <a target="_blank" rel="noopener" href="https://reddit.com/submit/?url=https%3A%2F%2Ftailwindcomponents.com%2Fu%2Fdhaifullah&amp;resubmit=true&amp;title=" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Reddit</a>
+                                            <div x-show="subMenuOpen" @click.away="subMenuOpen = false" class="absolute top-0 left-full ml-4 w-full rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 px-2 py-2"><a target="_blank" rel="noopener" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Ftailwindcomponents.com%2Fu%2Fdhaifullah&amp;text=" class="flex px-4 py-2 text-gray-700 hover:bg-gray-100">Twitter</a><a target="_blank" rel="noopener" href="https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Ftailwindcomponents.com%2Fu%2Fdhaifullah" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Facebook</a><a target="_blank" rel="noopener" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Ftailwindcomponents.com%2Fu%2Fdhaifullah&amp;title=&amp;summary=&amp;source=https%3A%2F%2Ftailwindcomponents.com%2Fu%2Fdhaifullah" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">LinkedIn</a><a target="_blank" rel="noopener" href="https://www.tumblr.com/widgets/share/tool?posttype=link&amp;title=&amp;caption=&amp;content=https%3A%2F%2Ftailwindcomponents.com%2Fu%2Fdhaifullah&amp;canonicalUrl=https%3A%2F%2Ftailwindcomponents.com%2Fu%2Fdhaifullah&amp;shareSource=tumblr_share_button" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Tumblr</a><a target="_blank" rel="noopener" href="https://reddit.com/submit/?url=https%3A%2F%2Ftailwindcomponents.com%2Fu%2Fdhaifullah&amp;resubmit=true&amp;title=" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Reddit</a>
                                                 <!-- Add more sub-menu items as needed -->
                                             </div>
-                                        </div><a href="#" class="block px-4 py-2 text-red-500 hover:bg-red-100 rounded-md">Report</a>
+                                        </div>
+                                        <a href="#" class="block px-4 py-2 text-red-500 hover:bg-red-100 rounded-md">Report</a>
                                     </div>
                                 </div>
                             </div>
@@ -219,8 +216,7 @@
                                                 <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="default-modal">
                                                     <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
                                                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"></path>
-                                                    </svg>
-                                                    <span class="sr-only">Close modal</span>
+                                                    </svg><span class="sr-only">Close modal</span>
                                                 </button>
                                             </div>
                                             <!-- Modal body -->
@@ -363,13 +359,11 @@
                         <button type="button" class="bg-base h-3 rounded-full w-3 z-50" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button> -->
                                 </div>
                                 <!-- Slider controls -->
-                                <button type="button" class="absolute cursor-pointer flex focus:outline-none group h-full items-center justify-center px-4 start-0 top-0 z-50" data-carousel-prev="">
-                                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"> <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                <button type="button" class="absolute cursor-pointer flex focus:outline-none group h-full items-center justify-center px-4 start-0 top-0 z-50" data-carousel-prev=""><span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"> <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"></path>
                                         </svg> <span class="sr-only">Previous</span> </span>
                                 </button>
-                                <button type="button" class="absolute cursor-pointer end-0 flex focus:outline-none group h-full items-center justify-center px-4 top-0 z-50" data-carousel-next="">
-                                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"> <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                <button type="button" class="absolute cursor-pointer end-0 flex focus:outline-none group h-full items-center justify-center px-4 top-0 z-50" data-carousel-next=""><span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"> <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"></path>
                                         </svg> <span class="sr-only">Next</span> </span>
                                 </button>
@@ -405,30 +399,26 @@
                     Nela Nikolovska </p>
                                     <p>Visual Designer</p>
                                 </div>
-                                <div class="border-t-2 flex items-center justify-center p-3 pb-10 space-x-3">
-                                    <a rel="noopener noreferrer" href="#" title="Email" class="dark:text-gray-50 hover:dark:text-violet-600"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-8 h-8">
+                                <div class="border-t-2 flex items-center justify-center p-3 pb-10 space-x-3"><a rel="noopener noreferrer" href="#" title="Email" class="dark:text-gray-50 hover:dark:text-violet-600"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-8 h-8">
                                             <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
                                             <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
-                                        </svg> </a>
-                                    <a rel="noopener noreferrer" href="#" title="Twitter" class="dark:text-gray-50 hover:dark:text-violet-600"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" fill="currentColor" class="w-8 h-8">
+                                        </svg> </a><a rel="noopener noreferrer" href="#" title="Twitter" class="dark:text-gray-50 hover:dark:text-violet-600"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" fill="currentColor" class="w-8 h-8">
                                             <path d="M 50.0625 10.4375 C 48.214844 11.257813 46.234375 11.808594 44.152344 12.058594 C 46.277344 10.785156 47.910156 8.769531 48.675781 6.371094 C 46.691406 7.546875 44.484375 8.402344 42.144531 8.863281 C 40.269531 6.863281 37.597656 5.617188 34.640625 5.617188 C 28.960938 5.617188 24.355469 10.21875 24.355469 15.898438 C 24.355469 16.703125 24.449219 17.488281 24.625 18.242188 C 16.078125 17.8125 8.503906 13.71875 3.429688 7.496094 C 2.542969 9.019531 2.039063 10.785156 2.039063 12.667969 C 2.039063 16.234375 3.851563 19.382813 6.613281 21.230469 C 4.925781 21.175781 3.339844 20.710938 1.953125 19.941406 C 1.953125 19.984375 1.953125 20.027344 1.953125 20.070313 C 1.953125 25.054688 5.5 29.207031 10.199219 30.15625 C 9.339844 30.390625 8.429688 30.515625 7.492188 30.515625 C 6.828125 30.515625 6.183594 30.453125 5.554688 30.328125 C 6.867188 34.410156 10.664063 37.390625 15.160156 37.472656 C 11.644531 40.230469 7.210938 41.871094 2.390625 41.871094 C 1.558594 41.871094 0.742188 41.824219 -0.0585938 41.726563 C 4.488281 44.648438 9.894531 46.347656 15.703125 46.347656 C 34.617188 46.347656 44.960938 30.679688 44.960938 17.09375 C 44.960938 16.648438 44.949219 16.199219 44.933594 15.761719 C 46.941406 14.3125 48.683594 12.5 50.0625 10.4375 Z"></path>
-                                        </svg> </a>
-                                    <a rel="noopener noreferrer" href="#" title="LinkedIn" class="dark:text-gray-50 hover:dark:text-violet-600"> <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 32 32" class="w-8 h-8">
+                                        </svg> </a><a rel="noopener noreferrer" href="#" title="LinkedIn" class="dark:text-gray-50 hover:dark:text-violet-600"> <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 32 32" class="w-8 h-8">
                                             <path d="M8.268 28h-5.805v-18.694h5.805zM5.362 6.756c-1.856 0-3.362-1.538-3.362-3.394s1.505-3.362 3.362-3.362 3.362 1.505 3.362 3.362c0 1.856-1.506 3.394-3.362 3.394zM29.994 28h-5.792v-9.1c0-2.169-0.044-4.95-3.018-4.95-3.018 0-3.481 2.356-3.481 4.794v9.256h-5.799v-18.694h5.567v2.55h0.081c0.775-1.469 2.668-3.019 5.492-3.019 5.875 0 6.955 3.869 6.955 8.894v10.269z"></path>
-                                        </svg> </a>
-                                    <a rel="noopener noreferrer" href="#" title="GitHub" class="dark:text-gray-50 hover:dark:text-violet-600"> <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 32 32" class="w-8 h-8">
+                                        </svg> </a><a rel="noopener noreferrer" href="#" title="GitHub" class="dark:text-gray-50 hover:dark:text-violet-600"> <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 32 32" class="w-8 h-8">
                                             <path d="M16 0.396c-8.839 0-16 7.167-16 16 0 7.073 4.584 13.068 10.937 15.183 0.803 0.151 1.093-0.344 1.093-0.772 0-0.38-0.009-1.385-0.015-2.719-4.453 0.964-5.391-2.151-5.391-2.151-0.729-1.844-1.781-2.339-1.781-2.339-1.448-0.989 0.115-0.968 0.115-0.968 1.604 0.109 2.448 1.645 2.448 1.645 1.427 2.448 3.744 1.74 4.661 1.328 0.14-1.031 0.557-1.74 1.011-2.135-3.552-0.401-7.287-1.776-7.287-7.907 0-1.751 0.62-3.177 1.645-4.297-0.177-0.401-0.719-2.031 0.141-4.235 0 0 1.339-0.427 4.4 1.641 1.281-0.355 2.641-0.532 4-0.541 1.36 0.009 2.719 0.187 4 0.541 3.043-2.068 4.381-1.641 4.381-1.641 0.859 2.204 0.317 3.833 0.161 4.235 1.015 1.12 1.635 2.547 1.635 4.297 0 6.145-3.74 7.5-7.296 7.891 0.556 0.479 1.077 1.464 1.077 2.959 0 2.14-0.020 3.864-0.020 4.385 0 0.416 0.28 0.916 1.104 0.755 6.4-2.093 10.979-8.093 10.979-15.156 0-8.833-7.161-16-16-16z"></path>
                                         </svg> </a>
-                                </div><a href="">Link</a>
+                                </div>
+                                <a href="">Link</a>
                             </div>
-                            <div class="bg-primary-800 max-w-xl rounded-lg shadow text-accent-50" data-pgc-define="flowbite-card-image" data-pgc-section="Cards"><a href="#"> <img class="rounded-t-lg" src="../images/blog/sample.jpg" alt=""/> </a>
-                                <div class="p-14">
-                                    <a href="#"> <h3 class="dark:text-white font-bold mb-10 text-2xl tracking-tight">
+                            <div class="bg-primary-800 max-w-xl rounded-lg shadow text-accent-50" data-pgc-define="flowbite-card-image" data-pgc-section="Cards">
+                                <a href="#"> <img class="rounded-t-lg" src="../images/blog/sample.jpg" alt=""/> </a>
+                                <div class="p-14"><a href="#"> <h3 class="dark:text-white font-bold mb-10 text-2xl tracking-tight">
                       Noteworthy technology acquisitions 2021 </h3> </a>
                                     <p class="dark:text-gray-100 font-normal mb-3 text-lg text-md">
                     Here are the biggest enterprise technology acquisitions of
-                    2021 so far, in reverse chronological order. </p>
-                                    <a href="#" class="bg-blue-700 dark:bg-blue-600 dark:focus:ring-blue-800 dark:hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium hover:bg-blue-800 inline-flex items-center mt-16 px-3 py-2 rounded-lg text-center text-white">
+                    2021 so far, in reverse chronological order. </p><a href="#" class="bg-blue-700 dark:bg-blue-600 dark:focus:ring-blue-800 dark:hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium hover:bg-blue-800 inline-flex items-center mt-16 px-3 py-2 rounded-lg text-center text-white">
                     Read more <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"></path>
                                         </svg> </a>
@@ -444,9 +434,7 @@
                                         <p class="mt-6 mb-8 text-lg sm:mb-12">
                       With you every step of the way, SpeedStack transforms your
                       online presence </p>
-                                        <div class="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
-                                            <a rel="noopener noreferrer" href="#" class="px-8 py-3 text-lg font-semibold rounded dark:bg-violet-600 dark:text-gray-50">GET STARTED</a>
-                                            <a rel="noopener noreferrer" href="#" class="px-8 py-3 text-lg font-semibold border rounded dark:border-gray-800">FIND PROJECT</a>
+                                        <div class="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start"><a rel="noopener noreferrer" href="#" class="px-8 py-3 text-lg font-semibold rounded dark:bg-violet-600 dark:text-gray-50">GET STARTED</a><a rel="noopener noreferrer" href="#" class="px-8 py-3 text-lg font-semibold border rounded dark:border-gray-800">FIND PROJECT</a>
                                         </div>
                                     </div>
                                     <div class="flex items-center justify-center p-6 mt-8 lg:mt-0 min-w-fit">
@@ -476,7 +464,8 @@
                                                 <img alt="" src="https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1770&amp;q=80" class="absolute inset-0 h-full w-full object-cover"/>
                                             </div>
                                         </div>
-                                        <div class="relative flex items-center bg-gray-100"><span class="hidden lg:absolute lg:inset-y-0 lg:-start-16 lg:block lg:w-16 lg:bg-gray-100"></span>
+                                        <div class="relative flex items-center bg-gray-100">
+                                            <span class="hidden lg:absolute lg:inset-y-0 lg:-start-16 lg:block lg:w-16 lg:bg-gray-100"></span>
                                             <div class="p-8 sm:p-16 lg:p-24">
                                                 <h2 class="text-2xl font-bold sm:text-3xl">
                           Lorem ipsum dolor sit amet, consectetur adipisicing
@@ -486,8 +475,7 @@
                           elit. Aliquid, molestiae! Quidem est esse numquam odio
                           deleniti, beatae, magni dolores provident quaerat
                           totam eos, aperiam architecto eius quis quibusdam
-                          fugiat dicta. </p>
-                                                <a href="#" class="mt-8 inline-block rounded border border-indigo-600 bg-indigo-600 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring active:text-indigo-500">
+                          fugiat dicta. </p><a href="#" class="mt-8 inline-block rounded border border-indigo-600 bg-indigo-600 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring active:text-indigo-500">
                           Get in Touch </a>
                                             </div>
                                         </div>
@@ -538,8 +526,7 @@
                                 <!-- Grid -->
                                 <div class="grid sm:grid-cols-12 gap-6">
                                     <div class="sm:self-end col-span-12 sm:col-span-7 md:col-span-8 lg:col-span-5 lg:col-start-3">
-                                        <!-- Card -->
-                                        <a class="group relative block rounded-xl overflow-hidden dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="#"> <div class="aspect-w-12 aspect-h-7 sm:aspect-none rounded-xl overflow-hidden">
+                                        <!-- Card --><a class="group relative block rounded-xl overflow-hidden dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="#"> <div class="aspect-w-12 aspect-h-7 sm:aspect-none rounded-xl overflow-hidden">
                                                 <img class="group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl w-full object-cover" src="https://images.unsplash.com/photo-1606868306217-dbf5046868d2?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=3481&amp;q=80" alt="Image Description"/>
                                             </div> <div class="absolute bottom-0 start-0 end-0 p-2 sm:p-4">
                                                 <div class="text-sm font-bold text-gray-800 rounded-lg bg-white p-4 md:text-xl dark:bg-gray-800 dark:text-gray-200">
@@ -550,8 +537,7 @@
                                     </div>
                                     <!-- End Col -->
                                     <div class="sm:self-end col-span-12 sm:col-span-5 md:col-span-4 lg:col-span-3">
-                                        <!-- Card -->
-                                        <a class="group relative block rounded-xl overflow-hidden dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="#"> <div class="aspect-w-12 aspect-h-7 sm:aspect-none rounded-xl overflow-hidden">
+                                        <!-- Card --><a class="group relative block rounded-xl overflow-hidden dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="#"> <div class="aspect-w-12 aspect-h-7 sm:aspect-none rounded-xl overflow-hidden">
                                                 <img class="group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl w-full object-cover" src="https://images.unsplash.com/photo-1605629921711-2f6b00c6bbf4?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=987&amp;q=80" alt="Image Description"/>
                                             </div> <div class="absolute bottom-0 start-0 end-0 p-2 sm:p-4">
                                                 <div class="text-sm font-bold text-gray-800 rounded-lg bg-white p-4 md:text-xl dark:bg-gray-800 dark:text-gray-200">
@@ -562,8 +548,7 @@
                                     </div>
                                     <!-- End Col -->
                                     <div class="col-span-12 md:col-span-4">
-                                        <!-- Card -->
-                                        <a class="group relative block rounded-xl overflow-hidden dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="#"> <div class="aspect-w-12 aspect-h-7 sm:aspect-none rounded-xl overflow-hidden">
+                                        <!-- Card --><a class="group relative block rounded-xl overflow-hidden dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="#"> <div class="aspect-w-12 aspect-h-7 sm:aspect-none rounded-xl overflow-hidden">
                                                 <img class="group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl w-full object-cover" src="https://images.unsplash.com/photo-1606836576983-8b458e75221d?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2070&amp;q=80" alt="Image Description"/>
                                             </div> <div class="absolute bottom-0 start-0 end-0 p-2 sm:p-4">
                                                 <div class="text-sm font-bold text-gray-800 rounded-lg bg-white p-4 md:text-xl dark:bg-gray-800 dark:text-gray-200">
@@ -574,8 +559,7 @@
                                     </div>
                                     <!-- End Col -->
                                     <div class="col-span-12 sm:col-span-6 md:col-span-4">
-                                        <!-- Card -->
-                                        <a class="group relative block rounded-xl overflow-hidden dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="#"> <div class="aspect-w-12 aspect-h-7 sm:aspect-none rounded-xl overflow-hidden">
+                                        <!-- Card --><a class="group relative block rounded-xl overflow-hidden dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="#"> <div class="aspect-w-12 aspect-h-7 sm:aspect-none rounded-xl overflow-hidden">
                                                 <img class="group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl w-full object-cover" src="https://images.unsplash.com/photo-1598929438701-ef29ab0bb61a?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1035&amp;q=80" alt="Image Description"/>
                                             </div> <div class="absolute bottom-0 start-0 end-0 p-2 sm:p-4">
                                                 <div class="text-sm font-bold text-gray-800 rounded-lg bg-white p-4 md:text-xl dark:bg-gray-800 dark:text-gray-200">
@@ -586,8 +570,7 @@
                                     </div>
                                     <!-- End Col -->
                                     <div class="col-span-12 sm:col-span-6 md:col-span-4">
-                                        <!-- Card -->
-                                        <a class="group relative block rounded-xl overflow-hidden dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="#"> <div class="aspect-w-12 aspect-h-7 sm:aspect-none rounded-xl overflow-hidden">
+                                        <!-- Card --><a class="group relative block rounded-xl overflow-hidden dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="#"> <div class="aspect-w-12 aspect-h-7 sm:aspect-none rounded-xl overflow-hidden">
                                                 <img class="group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl w-full object-cover" src="https://images.unsplash.com/photo-1467043153537-a4fba2cd39ef?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1019&amp;q=80" alt="Image Description"/>
                                             </div> <div class="absolute bottom-0 start-0 end-0 p-2 sm:p-4">
                                                 <div class="text-sm font-bold text-gray-800 rounded-lg bg-white p-4 md:text-xl dark:bg-gray-800 dark:text-gray-200">
@@ -623,10 +606,7 @@
                             </section>
                         </div>
                         <div class="hidden p-4 rounded-lg" id="widgets" role="tabpanel" aria-labelledby="widgets-tab">
-                            <label for="Toggle2" class="inline-flex items-center space-x-4 cursor-pointer dark:text-gray-800" data-pgc-define="mambaui-toggle" data-pgc-section="Widgets">
-                                <span>Off</span>
-                                <span class="relative"> <input id="Toggle2" type="checkbox" class="hidden peer"/> <div class="w-10 h-4 rounded-full shadow dark:bg-gray-400 peer-checked:dark:bg-violet-600"></div> <div class="absolute left-0 w-6 h-6 rounded-full shadow -inset-y-1 peer-checked:right-0 peer-checked:left-auto dark:bg-violet-600"></div> </span>
-                                <span>On</span>
+                            <label for="Toggle2" class="inline-flex items-center space-x-4 cursor-pointer dark:text-gray-800" data-pgc-define="mambaui-toggle" data-pgc-section="Widgets"><span>Off</span><span class="relative"> <input id="Toggle2" type="checkbox" class="hidden peer"/> <div class="w-10 h-4 rounded-full shadow dark:bg-gray-400 peer-checked:dark:bg-violet-600"></div> <div class="absolute left-0 w-6 h-6 rounded-full shadow -inset-y-1 peer-checked:right-0 peer-checked:left-auto dark:bg-violet-600"></div> </span><span>On</span>
                             </label>
                             <div class="lg:px-8 lg:py-14 mx-auto px-4 py-10 sm:px-6" data-pgc-define="preline-stats" data-pgc-section="Stats">
                                 <!-- Grid -->
@@ -684,7 +664,8 @@
                   This is just some informational text <button data-popover-target="popover-description" data-popover-placement="bottom-end" type="button">
                                         <svg class="w-10 h-10 ms-2 text-gray-400 hover:text-gray-500" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path>
-                                        </svg><span class="sr-only">Show information</span>
+                                        </svg>
+                                        <span class="sr-only">Show information</span>
                                     </button> </p>
                                 <div data-popover="" id="popover-description" role="tooltip" class="absolute bg-white border border-gray-200 dark:bg-gray-800 dark:border-gray-600 dark:text-gray-400 duration-300 inline-block invisible max-w-7xl opacity-0 rounded-lg shadow-sm text-gray-500 transition-opacity z-10">
                                     <div class="max-w-3xl min-w-[250px] p-3">
@@ -701,8 +682,7 @@
                       For each date bucket, the all-time volume of activities is
                       calculated. This means that activities in period n contain
                       all activities up to period n, plus the activities
-                      generated by your community in period. </p>
-                                        <a href="#" class="flex items-center font-medium text-blue-600 dark:text-blue-500 dark:hover:text-blue-600 hover:text-blue-700 hover:underline">Read more <svg class="w-2 h-2 ms-1.5 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                      generated by your community in period. </p><a href="#" class="flex items-center font-medium text-blue-600 dark:text-blue-500 dark:hover:text-blue-600 hover:text-blue-700 hover:underline">Read more <svg class="w-2 h-2 ms-1.5 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"></path>
                                             </svg></a>
                                     </div>
@@ -737,9 +717,9 @@
                             <div class="bg-gray-200 flex items-center mb-4 px-12 py-4 rounded-lg w-fit" role="alert" data-pgc-define="alert-info" data-pgc-section="Alerts">
                                 <svg class="flex-shrink-0 h-10 inline me-3 w-10" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                                     <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"></path>
-                                </svg><span class="sr-only">Info</span>
-                                <div>
-                                    <span class="font-medium">Info alert!</span> Change a few
+                                </svg>
+                                <span class="sr-only">Info</span>
+                                <div><span class="font-medium">Info alert!</span> Change a few
                                     things up and try submitting again.
                                 </div>
                             </div>
@@ -858,8 +838,7 @@
                       plaid gastropub normcore XOXO 90&apos;s pickled cindigo
                       jean shorts. Slow-carb next level shoindigoitch ethical
                       authentic, yr scenester sriracha forage franzen organic
-                      drinking vinegar. </p>
-                                        <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-8 mb-6"></span>
+                      drinking vinegar. </p><span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-8 mb-6"></span>
                                         <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">
                       HOLDEN CAULFIELD </h2>
                                         <p class="text-gray-500">Senior Product Designer</p>
@@ -1101,14 +1080,14 @@
                         </div>
                         <!-- End Grid -->
                     </div>
-                    <h2>Meet our team</h2><a href="https://wind-ui.com/components/layouts/" class="underline">WIND UI GRID LAYOUTS</a>
+                    <h2>Meet our team</h2>
+                    <a href="https://wind-ui.com/components/layouts/" class="underline">WIND UI GRID LAYOUTS</a>
                     <div class="flex h-fit justify-center w-fit">
                         <div class="antialiased sans-serif">
                             <div x-data="app" x-cloak>
                                 <div class="container md:py-10 mx-auto px-4 py-2">
                                     <div>
-                                        <div class="hidden">
-                                            <span class="font-bold my-1 text-gray-700 block">Results (would normally be hidden)</span>
+                                        <div class="hidden"><span class="font-bold my-1 text-gray-700 block">Results (would normally be hidden)</span>
                                             <input type="text" name="date_from" x-model="dateFromYmd"/>
                                             <input type="text" name="date_to" x-model="dateToYmd"/>
                                         </div>
@@ -1123,9 +1102,7 @@
                                             <div class="bg-white mt-2 rounded-lg shadow p-4 absolute" style="width: 17rem" x-show="showDatepicker" x-transition>
                                                 <div class="flex flex-col items-center">
                                                     <div class="w-full flex justify-between items-center mb-2">
-                                                        <div>
-                                                            <span x-text="MONTH_NAMES[month]" class="text-lg font-bold text-gray-800"></span>
-                                                            <span x-text="year" class="ml-1 text-lg text-gray-600 font-normal"></span>
+                                                        <div><span x-text="MONTH_NAMES[month]" class="text-lg font-bold text-gray-800"></span><span x-text="year" class="ml-1 text-lg text-gray-600 font-normal"></span>
                                                         </div>
                                                         <div>
                                                             <button type="button" class="transition ease-in-out duration-100 inline-flex cursor-pointer hover:bg-gray-200 p-1 rounded-full" @click="if (month == 0) {year--; month=11;} else {month--;} getNoOfDays()">
@@ -1478,46 +1455,50 @@
         }
       });
     </script>
-        <footer class="bg-primary-50 dark:bg-primary-800 pb-20 pt-32 shadow-xl" data-pgc="wa.Footer">
-            <div class="container grid grid-cols-1 mx-auto px-10 md:px-0 lg:grid-cols-2">
-                <div class="mx-auto pr-24"><a href="/" class="font-bold mt-4 text-2xl">SpeedStack</a>
-                    <p class="mt-2">Custom coded websites with great peformance and high ranking SEO, serving small businesses,</p>
-                    <p class="mt-2">When you&apos;re unsure about the technology stack for your next project, choose the SpeedStack.</p>
-                </div>
-                <div class="flex gap-8 justify-end">
-                    <div>
-                        <ul class="flex flex-col gap-2">
-                            <li><a href="/tiers" class="cursor-pointer underline">Pricing</a>
-                            </li>
-                            <li><a href="/free-consultation" class="cursor-pointer underline">Free consulatation</a>
-                            </li>
-                            <li><a href="/contact" class="cursor-pointer underline">Contact us</a>
-                            </li>
-                            <li><a href="https://docs.google.com/forms/d/1dtqeeshhtozp2vVflnWmww7c-LlSKrjvTTCrQVhJx3E/edit" spellcheck="false" data-medium-editor-element="true" role="textbox" aria-multiline="true" data-medium-editor-editor-index="18" medium-editor-index="41d3c34d-7200-fc77-212f-ac204aed5edc" data-placeholder="Type your text" data-medium-focused="true" class="cursor-pointer underline">Questionnaire</a>
-                            </li>
-                        </ul>
+    </body>
+    <footer class="bg-primary-800 body-font relative text-gray-600">
+        <div class="container flex flex-col-reverse gap-16 mx-auto px-5 py-20 sm:flex-nowrap md:flex-row">
+            <div class="bg-gray-300 flex h-[50rem] items-end justify-start overflow-hidden p-10 relative rounded-lg sm:mr-10 md:w-1/2 lg:w-2/3">
+                <iframe width="100%" height="100%" class="absolute h-[50rem] inset-0" frameborder="0" title="map" marginheight="0" marginwidth="0" scrolling="no" src="https://maps.google.com/maps?width=100%&height=600&hl=en&q=41.752960,22.172020&ie=UTF8&t=&z=14&iwloc=B&output=embed"></iframe>
+                <div class="bg-white relative flex flex-wrap py-6 rounded shadow-md">
+                    <div class="px-6">
+                        <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs">Погледни на Google - Здрузение На Возачи</h2>
+                        <p class="mt-1">4,5</p>
+                        <p class="mt-1"></p>
                     </div>
-                    <div>
-                        <ul class="flex flex-col gap-2">
-                            <li><a href="/services" class="cursor-pointer underline">Services</a>
-                            </li>
-                            <li><a href="/jamstack" class="cursor-pointer underline">Jamstack</a>
-                            </li>
-                            <li><a href="/blog" class="cursor-pointer underline">Blog</a>
-                            </li>
-                            <li><a href="/portfolio" class="cursor-pointer underline">Portfolio</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="border-accent-950 border-t-2 col-span-2 dark:border-accent-100 mt-20">
-                    <ul class="flex justify-between py-8">
-                        <li><a class="pr-10 border-r-[1px]">Privacy Policy</a><a class="pl-10">Terms &amp; Conditions</a><a class="pl-10"></a>
-                        </li>
-                        <li class="justify-self-end self-end">© Copyright SpeedStack 2024</li>
-                    </ul>
                 </div>
             </div>
-        </footer>
-    </body>
+            <div class="flex flex-col items-center justify-center mt-8 text-white w-full md:ml-auto md:mt-0 md:py-8 md:w-1/2 lg:w-1/3">
+                <form>
+                    <ul class="flex flex-col text-xl">
+                        <li class="flex gap-10">
+                            <svg width="25" height="26" viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.6839 17.8711C16.7514 18.8394 14.8072 20.8584 13.4583 22.2592C12.6716 23.0762 11.3655 23.0765 10.5788 22.2595C9.25336 20.8831 7.34681 18.9032 6.35287 17.8711C3.22389 14.6217 3.22389 9.35355 6.35287 6.10423C9.48184 2.85491 14.5549 2.85491 17.6839 6.10423C20.8129 9.35355 20.8129 14.6217 17.6839 17.8711Z" stroke="#B60509" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M15.023 11.9876C15.023 13.7109 13.6778 15.1078 12.0184 15.1078C10.359 15.1078 9.01379 13.7109 9.01379 11.9876C9.01379 10.2644 10.359 8.86749 12.0184 8.86749C13.6778 8.86749 15.023 10.2644 15.023 11.9876Z" stroke="#B60509" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                             <a href="">ул. Железничка бр. 12а, 2000, Македонија</a> 
+                        </li>
+                        <li class="flex gap-10">
+                            <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.99695 8.01859L10.8796 12.8818C11.5507 13.2958 12.425 13.2958 13.0961 12.8818L20.9787 8.01859M4.99492 18.188H18.9807C20.0842 18.188 20.9787 17.3602 20.9787 16.339V7.0941C20.9787 6.07293 20.0842 5.24512 18.9807 5.24512H4.99492C3.89147 5.24512 2.99695 6.07293 2.99695 7.0941V16.339C2.99695 17.3602 3.89147 18.188 4.99492 18.188Z" stroke="#B60509" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                             <a href="mailto:zvstip@zvstip.com.mk">zvstip@zvstip.com.mk</a> 
+                        </li>
+                        <li class="flex gap-10">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.9579 7.39796C5.56298 8.49483 6.26036 9.54754 7.16577 10.5075C8.07412 11.4733 9.20369 12.3523 10.6658 13.1032C10.7743 13.1562 10.8768 13.1562 10.9691 13.1194C11.1083 13.0664 11.2504 12.9501 11.3896 12.8102C11.498 12.7012 11.6328 12.5275 11.7734 12.3376C12.336 11.5941 13.0319 10.6709 14.015 11.1332C14.037 11.1435 14.0531 11.1553 14.0751 11.1641L17.3539 13.059C17.3642 13.0649 17.3759 13.0752 17.3847 13.0811C17.8169 13.38 17.9956 13.8408 18 14.3635C18 14.895 17.8051 15.4927 17.5195 15.9977C17.1415 16.6647 16.5847 17.1064 15.943 17.3979C15.3321 17.6806 14.6523 17.8322 13.9989 17.9294C12.9733 18.0811 12.0122 17.9839 11.0292 17.6806C10.0681 17.3817 9.09967 16.8885 8.04189 16.2318L7.96424 16.1818C7.4793 15.877 6.9548 15.5516 6.44056 15.1674C4.5594 13.7392 2.64162 11.6765 1.39191 9.4062C0.344384 7.50102 -0.226995 5.4442 0.0850661 3.48455C0.257945 2.40976 0.716513 1.43214 1.51644 0.787267C2.21382 0.221899 3.15293 -0.0872873 4.36894 0.0216639C4.50813 0.0319701 4.63266 0.112947 4.69859 0.233677L6.80097 3.80551C7.10863 4.20598 7.14673 4.60351 6.97824 5.00103C6.83906 5.32641 6.55777 5.62676 6.17392 5.9065C6.06111 6.00368 5.92632 6.10232 5.78421 6.20538C5.31392 6.54843 4.77917 6.94449 4.9623 7.40974L4.9579 7.39796Z" fill="#B60509"/>
+                            </svg>                             <a href="tel:+38932392387">+38932392387</a>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+        <div class="border-gray-100 border-t-[1px] container flex flex-col gap-10 items-center justify-between mx-auto py-20 text-white md:flex-row">
+            <ul class="flex flex-col text-center md:flex-row">
+                <li>Услуги</li>
+                <li>Документи</li>
+                <li>Закони</li>
+                <li>Контакт</li>
+            </ul>
+            <p>© Copyright 2021, All Rights Reserved</p>
+        </div>
+    </footer>
 </html>
