@@ -4,7 +4,7 @@
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
         <title data-pgc-field="title">{{meta.siteName}}</title>
-        <meta property="og:description" content="Custom coded websites with great peformance and high ranking SEO, serving small businesses in Austria" data-pgc-field="description"/>
+        <meta property="og:description" content="{{meta.siteDescription}}" data-pgc-field="description"/>
         <link href="../../tailwind_theme/tailwind.css" rel="stylesheet" type="text/css" data-pgc-field="style-link"/>
         <script>
       // On page load or when changing themes, best to add inline in `head` to avoid FOUC
@@ -28,14 +28,11 @@
         <header class="bg-white fixed flex h-40 items-center justify-center py-10 shadow shadow-lg text-black w-full z-[200]" data-pgc="wa.Header">
             <nav class="px-10 container grid grid-cols-2 h-fit items-center justify-center mx-auto w-full md:grid-cols-3"><a href="/" class="font-bold mt-4 text-2xl"><img height="50" width="50" src="uploads/logo.png" srcset="../uploads/logo.png 1x" data-pgc-field="logo"></a>
                 <ul class="flex hidden items-center justify-around min-w-[50%] text-xl md:flex" id="navbar-dropdown">
-                    <li>
-                        <a href="/">Услуги</a>
+                    <li><a href="/">Услуги</a>
                     </li>
-                    <li>
-                        <a href="/services">Документи</a>
+                    <li><a href="/services">Документи</a>
                     </li>
-                    <li>
-                        <a href="/blog">За Нас</a>
+                    <li><a href="/blog">За Нас</a>
                     </li>
                 </ul>
                 <div class="flex gap-12 justify-end">
